@@ -10,30 +10,33 @@
 <body>
     <div class="container">
         <div class="textpanel">
-            <div class="showcalculation" id="showcalculation"></div>
-            <div class="calculationresult" id="calculationresult"><input type="text" name="result" id="result" placeholder="0"></div>
+            <div class="showcalculation" id="showcalculation">
+                <input type="text" name="calculationpanel" id="calculationpanel">
+            </div>
+            <div class="calculationresult" id="calculationresult">
+                <input type="text" name="resultpanel" id="resultpanel" placeholder="0">
+            </div>
         </div>
         <div class="keys">
-            <button class="key" id="clear">AC</button>
-            <button class="key">C</button>
-            <button class="key">%</button>
-            <button class="key">/</button>
-            <button class="key">7</button>
-            <button class="key">8</button>
-            <button class="key">9</button>
-            <button class="key">*</button>
-            <button class="key">4</button>
-            <button class="key">5</button>
-            <button class="key">6</button>
-            <button class="key">-</button>
-            <button class="key">1</button>
-            <button class="key">2</button>
-            <button class="key">3</button>
-            <button class="key">+</button>
-            <button class="key">a</button>
-            <button class="key">0</button>
-            <button class="key">.</button>
-            <button class="key" id="equal">=</button>
+            <button class="key" id="clear" onclick="ClearAll()">AC</button>
+            <button class="key" id="c" onclick="DeleteOnebyOne()">C</button>
+            <button class="key" onclick="display('%')">%</button>
+            <button class="key" onclick="display('/')">/</button>
+            <button class="key" onclick="display('7')">7</button>
+            <button class="key" onclick="display('8')">8</button>
+            <button class="key" onclick="display('9')">9</button>
+            <button class="key" onclick="display('*')">*</button>
+            <button class="key" onclick="display('4')">4</button>
+            <button class="key" onclick="display('5')">5</button>
+            <button class="key" onclick="display('6')">6</button>
+            <button class="key" onclick="display('-')">-</button>
+            <button class="key" onclick="display('1')">1</button>
+            <button class="key" onclick="display('2')">2</button>
+            <button class="key" onclick="display('3')">3</button>
+            <button class="key" onclick="display('+')">+</button>
+            <button class="key" onclick="display('.')">.</button>
+            <button class="key" onclick="display('0')">0</button>
+            <button class="key" id="equal" onclick="Calculate()">=</button>
         </div>
     </div>
 
